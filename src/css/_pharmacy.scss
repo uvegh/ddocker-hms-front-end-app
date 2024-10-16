@@ -1,0 +1,1072 @@
+.pharmacy {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+  }
+  // padding-top: 70px;
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  // height: 864px;
+  display: grid;
+  grid-template-columns: 270px 1170px;
+  position: relative;
+  top: 70px;
+  margin: auto;
+  margin-bottom: 70px;
+
+  .doctor_sidebar {
+    background-color: #2b415c;
+    // padding-left: 17px;
+    // width: 300px;
+    // height: 864px;
+
+    .loggedIn {
+      display: flex;
+      color: #ffffff;
+      padding: 5px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+
+      div {
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 50px;
+      }
+    }
+    .links_display_box {
+      // width: 250px;
+
+      .clinic_name {
+        width: 100%;
+        height: 106px;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 15px;
+        padding-left: 17px;
+
+        .organization_image {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: center;
+          }
+        }
+
+        .organization_name {
+          color: #ffffff;
+
+          h2 {
+            line-height: 29px;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+
+            span {
+              color: #add8dc;
+            }
+          }
+        }
+      }
+
+      .sidebar_link_btns {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 17px;
+
+        .sidebar_btn {
+          height: 56px;
+          width: 100%;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+
+          &:hover,
+          :active {
+            background-color: #526479;
+            border-radius: 2px;
+          }
+
+          div {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 21px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .pharmRight {
+    table {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      margin-top: 20px;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+
+      tbody {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2b415c;
+
+        tr:nth-of-type(even) {
+          background: #e9e9e9;
+          border-radius: 5px;
+        }
+      }
+      thead {
+        background: #2b415c;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 10px;
+      }
+      th {
+        padding: 10px 0px;
+      }
+      tr,
+      td {
+        padding: 10px;
+
+        button {
+          border: none;
+          width: 120px;
+          height: 24px;
+          border: 1px solid #2b415c;
+          border-radius: 5px;
+        }
+      }
+    }
+    .pharmTops {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: auto;
+      padding-top: 50px;
+
+      div {
+        width: 30%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #add8dc;
+        box-shadow: 4px 4px 4px #cccccc;
+        border-radius: 5px;
+        align-items: center;
+        padding: 0;
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 19px;
+          line-height: 16px;
+          color: #2b415c;
+          padding: 10px 0px;
+        }
+        span {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 35px;
+          color: #2b415c;
+        }
+        i {
+          color: rgba(0, 0, 0, 0.4);
+          font-size: 14px;
+        }
+      }
+    }
+    .pharmMiddle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+
+      button {
+        width: 200px;
+        height: 40px;
+        outline: none;
+        background: #2b415c;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+      }
+      input {
+        width: 67%;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+    }
+    .pharmBottom {
+      width: 90;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .patients {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 4px 4px 4px #cccccc;
+        border-radius: 5px;
+        width: 85%;
+        margin: auto;
+        padding: 6px;
+        cursor: pointer;
+
+        div {
+          i {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+          }
+          p {
+            color: rgba(0, 0, 0, 0.4);
+          }
+          span {
+            color: #2b415c;
+          }
+        }
+      }
+    }
+  }
+}
+
+.viewPatient {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  width: 100%;
+  height: auto;
+  padding: 80px 0px 10px 0px;
+
+  .viewPBox {
+    width: 890px;
+    min-height: 335px;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+
+    .tops {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f6f6f6;
+      padding: 10px 0px;
+
+      .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+
+        div {
+          span {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+      .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+
+        div {
+          p {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.4);
+          }
+          span {
+            font-size: 15px;
+            color: #2b415c;
+          }
+        }
+      }
+    }
+
+    .records {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-bottom: 2px solid #f6f6f6;
+      padding-bottom: 20px;
+
+      p {
+        font-size: 18px;
+        color: #2b415c;
+      }
+      .zsel {
+        border-bottom: 2px solid #f6f6f6;
+      }
+
+      .records1 {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 10px 0px;
+
+        p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.4);
+          margin-bottom: 10px;
+        }
+        span {
+          background: #f6f6f6;
+          padding: 5px 20px;
+          color: #2b415c;
+        }
+        i {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+        button {
+          border: none;
+          width: 108px;
+          height: 30px;
+          background: #2b415c;
+          border-radius: 5px;
+          color: #ffffff;
+
+          span {
+            background: none;
+          }
+        }
+        .dispensed {
+          background: none;
+          color: #2b415c;
+        }
+      }
+      .records2 {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+
+        p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.4);
+          margin-bottom: 10px;
+        }
+        span {
+          background: #f6f6f6;
+          padding: 5px 20px;
+          color: #2b415c;
+        }
+      }
+    }
+  }
+}
+
+.dispense {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  width: 100%;
+  height: 100vh;
+  padding-top: 90px;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.25);
+
+  .dispenseMain {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+
+    .checkout {
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      position: absolute;
+      top: 20px;
+      left: 23%;
+      .checkoutMain {
+        width: 656px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #e9e9e9;
+        background: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        .topChecks {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .closeBtn {
+          button {
+            padding: 10px 15px;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 5px;
+            background: #2b415c;
+            color: #ffffff;
+          }
+        }
+        .bottomChecks {
+          width: 70%;
+          margin: auto;
+          padding: 20px 0px;
+
+          div input {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgba(43, 65, 92, 0.64);
+            background: #fff;
+          }
+          div button {
+            width: 100%;
+            border-radius: 5px;
+            background: #2b415c;
+            color: #ffffff;
+          }
+          div button.Cp {
+            width: 100%;
+            border-radius: 5px;
+            color: #2b415c;
+            background-color: #ffffff;
+            border: 1px solid #2b415c;
+          }
+          div p {
+            color: #2b415c;
+            font-size: 18px;
+            font-weight: 600;
+          }
+          div input,
+          button {
+            margin: 10px auto;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .dispenseTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #f6f6f6;
+      padding: 10px 0px;
+      margin-bottom: 10px;
+      .drugImg {
+        img {
+          object-fit: cover;
+          width: 70px;
+          height: 70px;
+        }
+      }
+      .left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+
+        p {
+          color: #2b415c;
+          font-size: 16px;
+        }
+        i {
+          color: rgba(0, 0, 0, 0.4);
+          font-size: 14px;
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        button {
+          width: 207px;
+          height: 40px;
+          border: none;
+          background: #2b415c;
+          border-radius: 5px;
+          color: #ffffff;
+        }
+        p {
+          color: rgba(0, 0, 0, 0.4);
+          font-size: 14px;
+        }
+        span {
+          color: #2b415c;
+          font-size: 16px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+      p {
+        font-size: 16px;
+        color: #2b415c;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #d6d3d3;
+        text-align: center;
+        padding: 10px;
+        margin: 10px auto;
+        color: #2b415c;
+      }
+      table tr td button:nth-child(2) {
+        border: none;
+        width: 96px;
+        height: 24px;
+        border: 1px solid #df4937;
+        border-radius: 5px;
+        color: #df4937;
+      }
+      table tr td button:nth-child(1) {
+        border: none;
+        width: 96px;
+        height: 24px;
+        border: 1px solid #2b415c;
+        border-radius: 5px;
+        color: #2b415c;
+      }
+    }
+  }
+}
+
+.loader {
+  font-size: 48px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2b415c;
+  letter-spacing: 2px;
+  position: relative;
+  left: 0;
+}
+.loadDispense {
+  position: relative;
+  left: 50%;
+}
+
+.loader::after {
+  content: "Loading";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: animloader 5s ease-in infinite;
+}
+
+@keyframes animloader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.pharmAdmin {
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  // height: 864px;
+  display: grid;
+  grid-template-columns: 270px 1170px;
+  position: relative;
+  top: 70px;
+  margin: auto;
+  margin-bottom: 70px;
+
+  .createDrug {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+
+    button {
+      width: 326px;
+      height: 40px;
+      background: #2b415c;
+      border-radius: 5px;
+      color: #ffffff;
+    }
+  }
+  .doctor_sidebar {
+    background-color: #2b415c;
+    // padding-left: 17px;
+    // width: 300px;
+    // height: 864px;
+
+    .loggedIn {
+      display: flex;
+      color: #ffffff;
+      padding: 5px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+
+      div {
+        width: 70px;
+        height: 70px;
+        background: white;
+        border-radius: 50px;
+      }
+    }
+    .links_display_box {
+      // width: 250px;
+
+      .clinic_name {
+        width: 100%;
+        height: 106px;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 15px;
+        padding-left: 17px;
+
+        .organization_image {
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: center;
+          }
+        }
+
+        .organization_name {
+          color: #ffffff;
+
+          h2 {
+            line-height: 29px;
+            font-size: 20px;
+            font-weight: 400;
+            cursor: pointer;
+
+            span {
+              color: #add8dc;
+            }
+          }
+        }
+      }
+
+      .sidebar_link_btns {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 17px;
+
+        .sidebar_btn {
+          height: 56px;
+          width: 100%;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+
+          &:hover,
+          :active {
+            background-color: #526479;
+            border-radius: 2px;
+          }
+
+          div {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 21px;
+            cursor: pointer;
+          }
+          button {
+            width: 100%;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+  .pharmTops {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+    padding-top: 40px;
+
+    div {
+      width: 30%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #add8dc;
+      box-shadow: 4px 4px 4px #cccccc;
+      border-radius: 5px;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    tbody {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2b415c;
+
+      tr:nth-of-type(even) {
+        background: #e9e9e9;
+        border-radius: 5px;
+      }
+    }
+    thead {
+      background: #2b415c;
+      border-radius: 5px;
+      color: #ffffff;
+      padding: 10px;
+    }
+    th {
+      padding: 10px 0px;
+    }
+    tr,
+    td {
+      padding: 10px;
+
+      button {
+        border: none;
+        width: 120px;
+        height: 24px;
+        border: 1px solid #2b415c;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.viewDrugs {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+  position: absolute;
+  top: 60px;
+
+  .innerDrug {
+    width: 756px;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35%;
+    padding: 30px;
+
+    .itemDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .itemClose {
+        cursor: pointer;
+        color: red !important;
+      }
+    }
+
+    button {
+      width: 207px;
+      height: 40px;
+      background: #2b415c;
+      border-radius: 5px;
+      color: #ffffff;
+      margin: auto 20px;
+    }
+    .firstDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px auto;
+      border-bottom: 2px solid #2b415c;
+      padding: 10px 0px;
+
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 21px;
+        color: #2b415c;
+      }
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 16px;
+        color: #2b415c;
+        padding: 10px 0px;
+      }
+    }
+    .secondDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
+
+      span {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 21px;
+        color: #2b415c;
+      }
+      p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 16px;
+        color: #2b415c;
+        padding: 10px 0px;
+      }
+
+      table {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+.drug {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+  position: absolute;
+  top: 50px;
+
+  .section {
+    background: #f6f6f6;
+    width: 720px;
+    height: 777px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 32px;
+    margin-left: 30%;
+
+    .topSection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+
+      p {
+        color: #2b415c;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: "Roboto";
+
+        span {
+          color: #add8dc;
+          font-size: 24px;
+          font-weight: 400;
+          font-family: "Roboto";
+        }
+      }
+    }
+
+    .drugFrom {
+      width: 656px;
+      height: 535px;
+      border: 1px solid #e9e9e9;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      margin-top: 14px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        color: #2b415c;
+        padding: 18px 0px 0px 13px;
+      }
+      form {
+        padding: 16px;
+        width: 100%;
+
+        .drugFromgroup {
+          margin: auto auto 24px auto;
+
+          label {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #2b415c;
+            padding-bottom: 8px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+
+            input {
+              width: 307px;
+              height: 26px;
+              border: none;
+              outline: none;
+              background: #ffffff;
+              border: 1px solid rgba(43, 65, 92, 0.64);
+              border-radius: 5px;
+              padding: 10px;
+              font-size: 14px;
+
+              ::placeholder {
+                font-family: "Roboto";
+                font-style: italic;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(0, 0, 0, 0.4);
+              }
+            }
+          }
+        }
+      }
+    }
+    .drugbtns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .disableDrug {
+        cursor: not-allowed;
+      }
+      .enableDrug {
+        cursor: pointer;
+      }
+      button {
+        width: 307px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border: 1px solid #2b415c;
+        border-radius: 5px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #2b415c;
+      }
+      button:nth-child(even) {
+        background: #2b415c;
+        border-radius: 5px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .noInput {
+        cursor: not-allowed;
+        background-color: #526479 !important;
+      }
+      .allowInput {
+        cursor: pointer;
+        background: #2b415c !important;
+      }
+    }
+  }
+}
+.Loadam {
+  color: #ffffff;
+  text-align: center;
+}
+
+.toastMessage {
+  width: 34vw;
+  font-size: 1rem;
+}

@@ -1,0 +1,801 @@
+.add-patient-form {
+  color: $loginBlue;
+
+  .found-patient-details {
+
+    background: whitesmoke;
+    font-weight: 600;
+
+    // p {
+    //   border: 0.5px solid $loginBlue;// }
+
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .btn-primary {
+    background-color: "#2B415C" !important;
+  }
+
+  form {
+    background: whitesmoke;
+    font-weight: 600;
+
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.organization_name {
+  span {
+    color: #add8dc;
+  }
+}
+
+.appointment_table_holder {
+  .form-select {
+    width: 10rem !important;
+  }
+}
+
+.nurse-dropDown {
+  ul {
+    overflow: scroll;
+    border-radius: 0.5rem;
+    background: white;
+
+    li {
+      border-top: 0.5px solid whitesmoke;
+      list-style: none;
+      padding: 0.3rem;
+    }
+  }
+
+}
+
+.new-appointment {
+  p {
+    min-height: 2.4rem;
+    padding: 0.2rem;
+    text-transform: capitalize;
+    border: 0.2px solid rgb(180, 174, 174) !important;
+    border-radius: 0.2rem;
+  }
+
+  select {
+    color: $loginBlue !important;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  input {
+    min-height: 2rem;
+  }
+
+  .form-control {
+    border: 0.2px solid rgb(180, 174, 174) !important;
+  }
+
+  ul {
+    list-style: none;
+    overflow-y: auto;
+
+    &:hover {
+      cursor: pointer !important;
+    }
+
+    li {
+      border-bottom: #add8dc;
+    }
+  }
+
+  .avail-doctors {
+    margin-top: 4.5rem;
+  }
+}
+
+.nested-select {
+  display: flex;
+}
+
+select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.consulation-nurseView {
+  label {
+    font-weight: 500;
+  }
+
+  p {
+    min-height: 2.4rem;
+    padding: 0.2rem;
+    text-transform: capitalize;
+    border: 0.2px solid rgb(180, 174, 174) !important;
+    border-radius: 0.2rem;
+  }
+
+  .form-control {
+    border: 0.2px solid rgb(180, 174, 174) !important;
+  }
+
+  input {
+    min-height: 2rem;
+  }
+
+  .email {
+    text-transform: lowercase !important;
+  }
+}
+
+.user-icon {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.recently-added-receptionist-view {
+  p {
+    min-height: 2.4rem;
+    padding: 0.2rem;
+    background-color: white;
+  }
+}
+
+.consultants-avaialable {
+  .form-control {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.dept {
+  border: none !important;
+  outline: none !important;
+  background-color: inherit;
+
+}
+
+.btns {
+
+
+
+  .post {
+    background-color: $loginBlue;
+  }
+}
+
+.consultantNames {
+  text-transform: capitalize;
+
+  &::before {
+    content: "Dr";
+  }
+}
+
+.select-department::after {
+  content: ">>";
+}
+
+.profile-nurse {
+
+  box-shadow: 0.5em 0.5em 0.5em #CCCCCC;
+
+  p {
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 0.8em;
+    min-height: 2.5em;
+    border-bottom: 0.2em solid $gavoNav;
+  }
+
+  .email {
+    text-transform: lowercase !important;
+  }
+}
+
+.nurse_search_box {
+
+  margin-right: 10rem !important;
+}
+
+.nurse_table {
+  width: 100%;
+
+  .table-responsive {
+    overflow-y: scroll;
+
+    .nurse_name {
+      min-width: 16rem;
+    }
+  }
+}
+
+.nurse-view {
+  .user_view_icon {
+    width: 6rem;
+    border-radius: 50%;
+    border: 1px solid $gavoNav;
+  }
+
+  h6 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+  }
+
+  .nurse_view_details {
+    text-align: left;
+
+    .assign_Patient_btn {
+      color: $loginBlue;
+      font-weight: 600;
+    }
+
+    label {
+      text-transform: capitalize;
+    }
+
+    p {
+      font-weight: 400;
+      text-transform: capitalize;
+      padding-bottom: 0.8em;
+      border-bottom: 0.2em solid $gavoNav;
+    }
+
+    span {
+      margin-top: 1rem;
+      min-width: inherit;
+    }
+
+    label {
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background-color: $loginBlue;
+      border: $loginBlue;
+    }
+  }
+}
+
+
+.table_loader {
+  margin: auto;
+}
+
+.doctor__dashboard {
+
+
+  .doctor_daily_info {
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+}
+
+
+.user_view_icon {
+  min-width: 6rem;
+  min-height: 6rem;
+  max-width: 6.2rem;
+  max-height: 6.2rem;
+  border-radius: 50%;
+  border: 1px solid $gavoNav;
+}
+
+.btn-primary {
+  background-color: #2B415C;
+
+  &:hover {
+    background-color: #37414e;
+    transition: all ease-in-out 1s;
+  }
+}
+
+.kg_ibs_btn {
+  .form-control {
+    height: 2.4rem !important;
+    border-left: none !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
+}
+
+.ward-select {
+  text-transform: capitalize;
+
+  span {
+    color:$loginBlue span {
+      font-size: 0.5rem;
+    }
+  }
+
+
+  ::selection {
+    background-color: $gavoNav;
+  }
+}
+
+.assign-patient {
+
+  margin: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  thead {
+    background-color: $loginBlue !important;
+    border-radius: 5px;
+    text-align: left;
+    border-radius: 0.5em;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+
+  th {
+    border: 1px solid $loginBlue;
+  }
+
+
+
+  tbody {
+    color: $loginBlue;
+    text-transform: capitalize;
+
+    >tr:nth-child(even) {
+      background-color: #e9e9e9;
+    }
+  }
+
+  .delete {
+    border: none;
+    color: red;
+    text-align: center;
+
+
+  }
+
+  .card_no {
+    width: 10em !important;
+  }
+
+
+}
+
+.assign-ward {
+  min-width: 10em !important;
+  text-transform: capitalize;
+}
+
+.loggedin-notification {
+
+
+
+
+  color: #3b5779;
+  border-radius: 1em 0em 0em 1em;
+
+}
+
+.notification-user-icon {
+  width: 4rem;
+}
+
+.edit-profile-dropdown {
+  color: $loginBlue;
+
+  ul>:nth-child(2) {
+    background-color: #D9D9D9;
+  }
+
+  .new-photo {
+    background-color: #D9D9D9 !important;
+
+
+  }
+
+  img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+.live-video {
+
+  margin: auto;
+  max-height: 50vh;
+  left: 50%
+}
+
+.bed-allotment {
+  h5 {
+    color: $loginBlue;
+  }
+
+  .ward {
+    color: rgba(255, 255, 255, 1);
+    border-radius: 1em;
+
+    text-align: center;
+    min-height: 30rem;
+    background-color: $wardBg;
+
+    .name {
+      text-transform: capitalize;
+    }
+
+    .ward_details {
+      text-align: left;
+      text-transform: capitalize;
+      font-weight: 400;
+      padding-left: 0.5em;
+      min-height: 50%;
+      line-height: 0.8em;
+
+    }
+
+    .ward-icon {
+      text-align: center;
+      font-size: 3em;
+      width: 2em;
+      border: #4d6b91;
+      margin: auto;
+      color: $loginBlue;
+    }
+
+
+  }
+}
+
+
+
+.ward {
+
+  .single-bed-icon {
+    width: 5.6rem !important;
+  }
+
+  .bed-btns {
+    margin: auto;
+    margin-top: 2em;
+
+    font-size: large;
+    padding-inline: 2px;
+
+    button {
+      padding: 0px;
+      color: #FFFFFF;
+      border-radius: 0.3em;
+      background-color: $wardBg;
+      border: 0.87px solid #FFFFFF;
+    }
+
+  }
+
+}
+
+.ward-upt {
+  min-height: 22rem !important;
+}
+
+.current-tab {
+  a {
+    color: $loginBlue
+  }
+
+  span {
+    color: rgba(173, 216, 220, 1);
+  }
+
+}
+
+.single-bed {
+  color: #ffffff;
+  background-color: $wardBg;
+
+  input {
+    border-radius: 0.3em;
+    min-height: 1.5em;
+    border: none;
+
+  }
+}
+
+.close-btn {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.view-patient-history {
+  .scrollhist {
+
+    color: $loginBlue;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+      width: 100px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #37414e;
+      border-radius: 0.5em;
+
+      &:hover {
+        background: #1d2735
+      }
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+
+  }
+
+
+  .patient-history {
+    // ::-webkit-scrollbar {
+    //   width: 2em;
+    //   color: #3b5779;
+    // }
+
+    border: 0.1em solid #E9E9E9;
+    box-shadow: 0px 0.2em 0.2em rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    color: $loginBlue;
+
+    p {
+      color: $loginBlue;
+      border-bottom: 1px solid rgba(43, 65, 92, 0.64);
+      min-height: 2em;
+      padding-bottom: 0.5em;
+    }
+  }
+}
+
+.logged-in-profile {
+  color: $loginBlue;
+
+  .profile_avi {
+    width: 4em;
+    height: 3.6em;
+    border-radius: 50%;
+
+  }
+
+
+  .logged-in-profile-details {
+    line-height: 0.2em;
+    margin-left: 0.5em;
+    margin-top: 0.7em;
+
+    p {
+      font-weight: 500;
+
+    }
+
+    span {
+      font-style: italic;
+      font-weight: 400;
+
+    }
+  }
+}
+
+.notifications-bar {
+  .time {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.8em;
+  }
+
+  list-style: none;
+  color: $loginBlue;
+  top: 13%;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  // min-width: 50%;
+
+  .notifications-header {
+    padding: 0.5em;
+
+    p,
+    img {
+      margin: auto;
+    }
+
+    img {
+      width: 0.8em;
+      height: 0.8em;
+    }
+
+    background-color: $gavoNav;
+  }
+
+  .notification-body {
+
+
+    .notification-text {
+      min-width: 10rem;
+      text-align: end;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      overflow-y: scroll;
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+
+
+    color: $loginBlue;
+
+    section {
+
+
+      min-height: 5em;
+
+
+      .closeBtn {
+        width: 0.7em;
+        height: 0.7em;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .user-icon {
+      width: 4em;
+      height: 3.6em;
+
+      border-radius: 50%;
+    }
+
+
+
+  }
+
+}
+
+.closeBtn-header {
+  width: 0.7em;
+  height: 0.7em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.search_box_patient {
+  left: 44%
+}
+
+.patient_daily_info {
+  color: $loginBlue;
+
+  .row {
+
+    div[class*="col"] {
+
+
+      .task {
+        margin-top: 1.5em;
+        line-height: 1.8em;
+        background: #ADD8DC;
+        min-height: 8rem;
+        border-radius: 0.5em;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        font-size: small;
+      }
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1em;
+      }
+
+
+    }
+  }
+
+  .patient_header {
+    .present_section {
+
+
+
+
+      span {
+        color: rgba(175, 177, 184, 1)
+      }
+    }
+  }
+
+  .analytics {
+
+    .row {
+
+
+      div[class*="col"] {
+        .consultation_chart {
+          border-radius: 0.5em;
+          background-color: #FFFFFF;
+          box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.25);
+          min-height: 23rem;
+          margin: auto;
+        }
+
+      }
+    }
+  }
+}
+
+.rescheduleForm {
+  color: $loginBlue;
+  min-height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  input {
+    border: 1px solid $loginBlue;
+
+    &::placeholder {
+      color: $loginBlue;
+    }
+  }
+
+  textarea {
+    min-height: 15em;
+    border: 1px solid $loginBlue;
+  }
+}
+
+.overlay {
+  overflow: 'hidden';
+  opacity: 1 !important;
+  transition: 'all 100s linear 2s ' !important;
+}
+
+.landingPage {
+  position: relative;
+
+  .home {
+    height: 50% !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .organization_image {
+    width: 3rem;
+    height: 2rem;
+  }
+}
